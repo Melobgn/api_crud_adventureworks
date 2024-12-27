@@ -1,0 +1,12 @@
+fastapi
+uvicorn 
+sqlmodel 
+sqlalchemy 
+pydantic
+pydantic-settings
+pyjwt 
+passlib
+pyodbc
+python-jose
+python-dotenv
+python-multipart
