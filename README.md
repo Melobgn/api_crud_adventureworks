@@ -100,7 +100,7 @@ AdventureWorks API est une application RESTful développée avec **FastAPI** et 
 
 4. Endpoints Principaux
 
-
+```
 | Méthode | Endpoint                 | Description                                  | Authentification |
 |---------|--------------------------|----------------------------------------------|------------------|
 | `POST`  | `/auth/login`            | Authentifier un utilisateur                  | ❌               |
@@ -109,7 +109,7 @@ AdventureWorks API est une application RESTful développée avec **FastAPI** et 
 | `POST`  | `/products`              | Créer un nouveau produit (admin requis)      | ✅               |
 | `PUT`   | `/products/{product_id}` | Mettre à jour un produit (admin requis)      | ✅               |
 | `DELETE`| `/products/{product_id}` | Supprimer un produit (admin requis)          | ✅               |
-
+```
 
 
 ## Structure du projet
