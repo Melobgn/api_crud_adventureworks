@@ -100,7 +100,7 @@ AdventureWorks API est une application RESTful développée avec **FastAPI** et 
 
 4. Endpoints Principaux
 
-```
+
 | Méthode | Endpoint                 | Description                                  | Authentification |
 |---------|--------------------------|----------------------------------------------|------------------|
 | `POST`  | `/auth/login`            | Authentifier un utilisateur                  | ❌               |
@@ -109,24 +109,22 @@ AdventureWorks API est une application RESTful développée avec **FastAPI** et 
 | `POST`  | `/products`              | Créer un nouveau produit (admin requis)      | ✅               |
 | `PUT`   | `/products/{product_id}` | Mettre à jour un produit (admin requis)      | ✅               |
 | `DELETE`| `/products/{product_id}` | Supprimer un produit (admin requis)          | ✅               |
-```
 
 
-## Structure du projet
 
-adventureworks-api/
-├── auth/
-│   ├── __init__.py          # Centralisation des dépendances d'authentification
-│   ├── dependencies.py      # Gestion de l'authentification JWT
-├── routes/
-│   ├── products.py          # Endpoints CRUD pour les produits
-├── models.py                # Définition des modèles SQLModel
-├── config.py                # Configuration et variables d'environnement
-├── main.py                  # Point d'entrée principal de l'application
-├── requirements.txt         # Liste des dépendances Python
-├── .env                     # Variables d'environnement (non inclus dans le repo)
-└── README.md                # Documentation du projet
+## Structure du projet
 
+- **auth/**
+  - `__init__.py` : Centralisation des dépendances d'authentification
+  - `dependencies.py` : Gestion de l'authentification JWT
+- **routes/**
+  - `products.py` : Endpoints CRUD pour les produits
+- `models.py` : Définition des modèles SQLModel
+- `config.py` : Configuration et variables d'environnement
+- `main.py` : Point d'entrée principal de l'application
+- `requirements.txt` : Liste des dépendances Python
+- `.env` : Variables d'environnement (non inclus dans le repo)
+- `README.md` : Documentation du projet
 
 
 ## Tests
